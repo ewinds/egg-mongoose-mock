@@ -1,0 +1,64 @@
+{
+  "name": "egg-mongoose-mock",
+  "version": "3.3.0",
+  "description": "egg mongoose using mock server plugin",
+  "eggPlugin": {
+    "name": "mongooseMock"
+  },
+  "keywords": [
+    "egg",
+    "egg-model",
+    "mongoose",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "@types/mongoose": "^5.3.24",
+    "await-first": "^1.0.0",
+    "mongodb-memory-server-core": "^6.9.2",
+    "mongoose": "^5.10.9"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "bluebird": "^3.5.1",
+    "dotenv": "^7.0.0",
+    "egg": "^2.20.2",
+    "egg-bin": "^4.9.0",
+    "egg-mock": "^3.1.2",
+    "eslint": "^5.15.3",
+    "eslint-config-egg": "^7.1.0",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "app.js",
+    "agent.js",
+    "config",
+    "app",
+    "lib"
+  ],
+  "ci": {
+    "version": "8, 10, 12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewinds/egg-mongoose-mock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ewinds/egg-mongoose-mock/issues"
+  }
+}
