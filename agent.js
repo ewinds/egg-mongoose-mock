@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = agent => {
-  if (agent.config.mongoose.agent) require('./lib/mongoose')(agent);
+  if (agent.config.mongooseMock.agent) require('./lib/mongoose')(agent);
 };

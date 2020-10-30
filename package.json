@@ -1,6 +1,6 @@
 {
   "name": "egg-mongoose-mock",
-  "version": "3.3.0",
+  "version": "3.3.13",
   "description": "egg mongoose using mock server plugin",
   "eggPlugin": {
     "name": "mongooseMock"
@@ -15,7 +15,7 @@
   "dependencies": {
     "@types/mongoose": "^5.3.24",
     "await-first": "^1.0.0",
-    "mongodb-memory-server-core": "^6.9.2",
+    "mongodb-memory-server": "^6.9.2",
     "mongoose": "^5.10.9"
   },
   "devDependencies": {

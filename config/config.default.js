@@ -7,10 +7,9 @@
   * @property {String} url - connect url
   * @property {Object} options - options to pass to the driver and mongoose-specific
   */
-exports.mongoose = {
+exports.mongooseMock = {
   options: {},
   plugins: [],
-  loadModel: true,
   app: true,
   agent: false,
 };
